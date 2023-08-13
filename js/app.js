@@ -1,13 +1,16 @@
 const filter_btns = document.querySelectorAll(".filter-btn");
-const skills_wrap = document.querySelector(".skills");
-const skills_bars = document.querySelectorAll(".skill-progress");
 const records_wrap = document.querySelector(".records");
 const records_numbers = document.querySelectorAll(".number");
 const footer_input = document.querySelector(".footer-input");
 const hamburger_menu = document.querySelector(".hamburger-menu");
 const navbar = document.querySelector("header nav");
 const links = document.querySelectorAll(".links a");
-
+var typing=new Typed(".text-type", {
+  strings: [ "Web Designer", "Freelancer", "Graphic Designer", "Web Developer"],
+  typeSpeed: 120,
+  backSpeed: 40,
+  loop: true,
+});
 footer_input.addEventListener("focus", () => {
   footer_input.classList.add("focus");
 });
@@ -61,10 +64,7 @@ function checkScroll(el) {
   return false;
 }
 
-function skillsEffect() {
-  if (!checkScroll(skills_wrap)) return;
-  skills_bars.forEach((skill) => (skill.style.width = skill.dataset.progress));
-}
+
 
 function countUp() {
   if (!checkScroll(records_wrap)) return;

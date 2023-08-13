@@ -66,7 +66,7 @@ img {
 
 .grid-2 {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   align-items: center;
   justify-content: center;
 }
@@ -222,7 +222,13 @@ img {
   padding: 0.7rem 1.8rem;
   font-size: 1rem;
 }
+.text-type{
+  font-family:'Poppins', sans-serif ;
+  font-size:60px;
+  display: inline;
+  color: #9a0000;
 
+}
 /* End Genral Styles */
 
 /* Header */
@@ -653,7 +659,7 @@ header .circle {
   left: 0;
   z-index: 2;
   color: var(--light-one);
-  background-color: rgba(120, 76, 251, 0.55);
+  background-color: rgba(61, 154, 254, 0.55);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -702,6 +708,7 @@ header .circle {
 
 .gallery-image:hover .img-overlay {
   opacity: 1;
+  
 }
 
 .gallery-image:hover img {
@@ -738,36 +745,19 @@ header .circle {
 }
 
 .skill-title {
-  color: #555;
+  color: #9a0000;
   font-weight: 600;
   margin-bottom: 0.3rem;
 }
 
-.skill-bar {
-  width: 70%;
-  height: 8px;
-  border-radius: 4px;
-  background-color: #ece6fa;
-  position: relative;
-  overflow: hidden;
-}
 
-.skill-progress {
-  position: absolute;
-  height: 100%;
-  width: 0%;
-  top: 0;
-  left: 0;
-  background-color: var(--main-color);
-  transition: 1s;
-}
 
 .about .column-1 {
   position: relative;
 }
 
 .about .column-1:before {
-  content: "About";
+  content: "About Me";
   position: absolute;
   font-size: 8rem;
   font-weight: 800;
@@ -779,11 +769,12 @@ header .circle {
 }
 
 .about .points {
-  width: 300px;
-  top: 65%;
+  width: 100%;
+  top: 100%;
   left: 80%;
   opacity: 0.1;
 }
+
 
 /* End About */
 
@@ -1040,7 +1031,7 @@ header .circle {
   height: 67px;
   display: inline-block;
   border-radius: 50%;
-  background-color: var(--main-color);
+  background-color: blueviolet;
   color: var(--light-one);
   text-align: center;
   font-size: 1.4rem;

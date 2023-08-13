@@ -14,6 +14,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
   </head>
   <body>
     <main>
@@ -118,7 +119,8 @@
             <div class="column-1">
               <h1 class="header-title">Kowsick Ram M</h1>
               <div class="text">
-                <p>Hello, I'm Kowsick Ram, Front-End Web developer.</p>
+                
+                <div class="text-type"></div>
                 <div class="small-desc">
                    HTML,CSS || ReactJS, JavaScript, NodeJS/ExpressJS 
                 </div>
@@ -234,16 +236,14 @@
           <div class="section-body">
             <div class="filter">
               <button class="filter-btn active" data-filter="*">All</button>
-              <button class="filter-btn" data-filter=".appdev">
-                Mobile App
+              <button class="filter-btn" data-filter=".inprocess">
+                In Process
               </button>
-              <button class="filter-btn" data-filter=".webdev">Web App</button>
-              <button class="filter-btn" data-filter=".wordpress">
+              <button class="filter-btn" data-filter="*">Web App</button>
+              <button class="filter-btn" data-filter="*">
                 WordPress
               </button>
-              <!-- <button class="filter-btn" data-filter=".wordpress">
-                NodeJS
-              </button> -->
+              
             </div>
 
             <div class="grid">
@@ -255,7 +255,7 @@
                   <div class="gallery-image">
                     <img
                       src="./img/portfolio/Calculator.jpg"
-                      alt="Shopping App"
+                      alt="Calculator App"
                     />
                     <div class="img-overlay">
                       <div class="plus"></div>
@@ -269,7 +269,7 @@
               </a>
 
               <a target="_blank" href="#">
-                <div class="grid-item webdev">
+                <div class="grid-item inprocess">
                   <div class="gallery-image">
                     <img
                       src="#"
@@ -286,7 +286,7 @@
                 </div>
               </a>
               <a target="_blank" href="about:black">
-                <div class="grid-item appdev">
+                <div class="grid-item inprocess">
                   <div class="gallery-image">
                     <img
                       src="#"
@@ -303,7 +303,7 @@
                 </div>
               </a>
               <a target="_blank" href="#">
-                <div class="grid-item webdev">
+                <div class="grid-item inprocess">
                   <div class="gallery-image">
                     <img
                       src="#"
@@ -321,7 +321,7 @@
                 </div>
               </a>
               <a target="_blank" href="#">
-                <div class="grid-item wordpress">
+                <div class="grid-item inprocess">
                   <div class="gallery-image">
                     <img
                       src="#"
@@ -331,7 +331,6 @@
                       <div class="plus"></div>
                       <div class="img-description">
                         <h3>App Development</h3>
-                        <h3>On Process</h3>
                         <h5>View Demo</h5>
                       </div>
                     </div>
@@ -342,7 +341,7 @@
                 href="https://play.google.com/store/apps/details?id=com.memebaaz.MemeBaaz"
                 target="_blank"
               >
-                <div class="grid-item ui appdev">
+                <div class="grid-item ui inprocess">
                   <div class="gallery-image">
                     <img
                       src="./img/"
@@ -352,7 +351,6 @@
                       <div class="plus"></div>
                       <div class="img-description">
                         <h3>Media Sharing app</h3>
-                        <h3>On Process...</h3>
                         <h5>View Demo</h5>
                       </div>
                     </div>
@@ -375,51 +373,39 @@
           <div class="section-body grid-2">
             <div class="column-1">
               <h3 class="title-sm">Hello, I'm Kowsick</h3>
+              <img src="./img/shapes/points4.png" class="points" alt="" />
+              <img src="./img/profile1222.png" class="z-index pr-2" alt="" />
               <p class="text">
-                A passionate Mobile App and Full Stack Web Developer having an
-                experience of building Mobile and Web applications with
+                A Passionate Full Stack Web Developer having an
+                Skills of Building Web applications with
                 JavaScript / Reactjs / Nodejs  and some other cool
-                libraries and frameworks and Cross Platform Mobile Apps With
-                Flutter.
+                libraries and frameworks.
               </p>
               <div class="skills">
-                <div class="skill Flutter">
-                  <h3 class="skill-title">HTML/CSS</h3>
-                  <div class="skill-bar">
-                    <div class="skill-progress" data-progress="98%"></div>
-                  </div>
+                <div class="skill html">
+                  <h3 class="skill-title">> HTML/CSS</h3>
                 </div>
                 <div class="skill ReactJS">
-                  <h3 class="skill-title">ReactJS</h3>
-                  <div class="skill-bar">
-                    <div class="skill-progress" data-progress="89%"></div>
-                  </div>
+                  <h3 class="skill-title">> React JS</h3>
                 </div>
                 <div class="skill NodeJS">
-                  <h3 class="skill-title">NodeJS</h3>
-                  <div class="skill-bar">
-                    <div class="skill-progress" data-progress="80%"></div>
+                  <h3 class="skill-title">> NodeJS</h3>
                   </div>
                 </div>
-                <div class="skill WordPress">
-                  <h3 class="skill-title">Photoshop</h3>
-                  <div class="skill-bar">
-                    <div class="skill-progress" data-progress="93%"></div>
-                  </div>
+                <div class="skill Photoshop">
+                  <h3 class="skill-title">> Photoshop</h3>
                 </div>
-                <div class="skill Firebase">
-                  <h3 class="skill-title">Excel</h3>
-                  <div class="skill-bar">
-                    <div class="skill-progress" data-progress="60%"></div>
+                <div class="skill Excel">
+                  <h3 class="skill-title">> Excel</h3>
+                  </div>
+                <div class="skill Tableau">
+                  <h3 class="skill-title">> Tableau</h3>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="column-2 image">
-              <img src="./img/shapes/points4.png" class="points" alt="" />
-              <img src="./img/profile1222.png" class="z-index" alt="" />
-            </div>
+            
           </div>
         </div>
       </section>
@@ -648,7 +634,7 @@
           <div class="grid-4-col footer-about">
             <h3 class="title-sm">About</h3>
             <p class="text">
-              A passionate Mobile App and Full Stack Web Developer having an
+              A passionate Full Stack Web Developer having an
               experience of building Mobile and Web applications.
             </p>
           </div>
@@ -657,7 +643,7 @@
             <h3 class="title-sm">Links</h3>
             <ul>
               <li>
-                <a href="#services">Services</a>
+                <a href="#education">Education</a>
               </li>
               <li>
                 <a href="#portfolio">Portfolio</a>
@@ -675,11 +661,7 @@
           
 
           <div class="grid-4-col footer-newstletter">
-            <h3 class="title-sm">Subscribe</h3>
-            <p class="text">
-              Subscribe to me for the latest update and if I am available for
-              work.
-            </p>
+           
             <form
               action="https://formsubmit.co/fbe30d8ad08199aa18d939301659dec5 "
               method="POST"
@@ -702,10 +684,7 @@
           </div>
         </div>
 
-        <div class="bottom-footer">
-          <div class="copyright">
-            <p class="text">Copyright&copy;2023 All rights reserved</p>
-          </div>
+        
 
           <div class="followme-wrap">
             <div class="followme">
@@ -715,7 +694,7 @@
                 <a href="https://twitter.com/kowsickram" target="_blank">
                   <i class="fab fa-twitter"></i>
                 </a>
-                <a href="https://instagram.com/rawquesh" target="_blank">
+                <a href="https://instagram.com/_kowjii_1122_" target="_blank">
                   <i class="fab fa-instagram"></i>
                 </a>
                 <a href="https://www.linkedin.com/in/kowsickram/" target="_blank">
