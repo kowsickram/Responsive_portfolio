@@ -6,8 +6,8 @@ const hamburger_menu = document.querySelector(".hamburger-menu");
 const navbar = document.querySelector("header nav");
 const links = document.querySelectorAll(".links a");
 var typing=new Typed(".text-type", {
-  strings: [ "Web Designer", "Freelancer", "Graphic Designer", "Web Developer"],
-  typeSpeed: 120,
+  strings: [ "Web Designer", "Editor", "Graphic Designer", "Web Developer"],
+  typeSpeed: 100,
   backSpeed: 40,
   loop: true,
 });
