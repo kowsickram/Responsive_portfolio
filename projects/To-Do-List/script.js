@@ -11,16 +11,16 @@ function addTask() {
     const li = document.createElement('li');
     li.innerHTML = `<span>${taskText}</span>
                     <button class="edit">Edit</button>
-                    <button class="delete">Delete</button>`;
+                    <button class="Complete">Completed</button>`;
     taskList.appendChild(li);
 
     taskInput.value = '';
 
     const editBtn = li.querySelector('.edit');
-    const deleteBtn = li.querySelector('.delete');
+    const CompleteBtn = li.querySelector('.Complete');
 
     editBtn.addEventListener('click', () => editTask(li, taskText));
-    deleteBtn.addEventListener('click', () => deleteTask(li));
+    CompleteBtn.addEventListener('click', () => CompleteTask(li));
 }
 
 function editTask(li, taskText) {
@@ -30,6 +30,6 @@ function editTask(li, taskText) {
     }
 }
 
-function deleteTask(li) {
+function CompleteTask(li) {
     li.remove();
 }
