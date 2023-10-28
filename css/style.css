@@ -50,7 +50,40 @@ img {
   -o-user-drag: none;
   /* user-select: none; */
 }
+.loader {
+  width: 60%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.loader_cube {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 150px;
+}
+
+.loader_cube--glowing {
+  z-index: 0;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(0, 186, 228, 0.3);
+}
+
+.loader_cube--color {
+  z-index: -1;
+  filter: blur(5px);
+  background: linear-gradient(135deg, #1a65fb, #ff0000);
+  animation: loadtwo 5.5s ease-in-out infinite;
+}
+
+@keyframes loadtwo {
+  50% {
+    transform: rotate(-360deg);
+  }
+}
 .container {
   position: relative;
   z-index: 5;
@@ -91,7 +124,12 @@ img {
   align-items: center;
   justify-content: center;
 }
-
+img.pr_2{
+  border-radius: 50%;
+  filter: grayscale();
+  border: 5px solid var(--main-color);
+  width: 300px;
+}
 .z-index {
   position: relative;
   z-index: 2;
@@ -218,6 +256,7 @@ img {
   background-color: #6b44e0;
 }
 
+
 .btn.small {
   padding: 0.7rem 1.8rem;
   font-size: 1rem;
@@ -228,7 +267,6 @@ img {
   display: inline-flex;
   position: static;
   color: #9a0000;
-
 }
 /* End Genral Styles */
 
@@ -368,14 +406,16 @@ nav.open .links {
   margin: 2.15rem 0;
 }
 
-.header-content .text .small-desc {
+
+.header-content .text {
   font-size: 15px;
   margin-top: 3px;
   color: rgba(19, 15, 15, 0.521);
 }
 
 .header-content .image .img-element {
-  max-width: 750px;
+  max-width: 400px;
+  border-radius: 50%;
 }
 
 header .points1 {
@@ -457,6 +497,7 @@ header .circle {
 .card {
   position: relative;
   width: 100%;
+  height: 30px;
   max-width: 390px;
   min-height: 520px;
   background-color: var(--light-three);
@@ -468,7 +509,10 @@ header .circle {
   overflow: hidden;
   transition: 0.3s;
 }
-
+h2.percent{
+ background-color: var(--main-color);
+ color: snow;
+}
 .card:before {
   content: attr(data-card);
   position: absolute;
@@ -481,16 +525,7 @@ header .circle {
   opacity: 0.025;
 }
 
-.card:after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 0px;
-  bottom: 0;
-  left: 0;
-  background-color: var(--main-color);
-  transition: 0.3s;
-}
+
 
 .card-wrap:hover .card {
   transform: translateY(-15px);
@@ -1073,7 +1108,8 @@ header .circle {
   color: #7b7b7b;
   font-size: 1.3rem;
   margin-right: 0.4rem;
-  transition: 0.3s;
+  transition: 0.1s;
+
 }
 
 .social-media a:hover {
@@ -1228,7 +1264,7 @@ header .circle {
   }
 
   .header-content .image .img-element {
-    max-width: 500px;
+    max-width: 400px;
   }
 
   nav .container {
