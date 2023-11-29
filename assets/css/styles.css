@@ -336,6 +336,21 @@ body.dark-theme {
   width: 300px;
 }
 
+button.dwn_btn{
+  position: relative;
+  align-items: center;
+  width: 300px;
+  padding: 1rem;
+  font-weight: var(--font-semi-bold);
+  background-color: transparent;
+  cursor: pointer;
+  border: 1px solid grey;
+  border-radius: 1rem;
+}
+.dwn_btn a{
+  color: aliceblue;
+  font-family:sans-serif ;
+}
 .home__shape-wawes,
 .home__shape-circle{
   position: absolute;
