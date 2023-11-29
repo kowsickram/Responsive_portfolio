@@ -80,11 +80,11 @@ const sendEmail = (e) => {
     } else {
         //serviceID - templateID - #form - publicKey
         emailjs.sendForm(
-          "service_kzoqqmf",
-          "template_w5arg53",
+          "service_uyn2x0j",
+          "template_qqwsegt",
           "#contact-form",
-          "Mw_fqYso5IE8DksRC"
-        ).then(() => {
+          "YoLqFVV8zRyxYHwHS"
+          ).then(() => {
             //Show message and add color
             contactMessage.classList.add('color-blue')
             contactMessage.textContent = 'Message sent successfully ✅'
@@ -102,7 +102,6 @@ const sendEmail = (e) => {
         contactProject.value = '';
     }
 }
-
 contactForm.addEventListener('submit', sendEmail)
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
