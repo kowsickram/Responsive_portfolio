@@ -634,7 +634,13 @@ button.dwn_btn{
   color: var(--title-color);
   font-size: var(--small-font-size);
 }
-
+a.git__button{
+  color: aliceblue;
+  padding: 10px;
+  margin: 4px;
+  width: 300px;
+  display: block;
+}
 .projects__button i{
   font-size: 1rem;
   transition: transform .3s;
