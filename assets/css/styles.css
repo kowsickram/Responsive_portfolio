@@ -1,6 +1,6 @@
 /*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Roboto:wght@400;500&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Manrope:wght@500&display=swap');
 /*=============== VARIABLES CSS ===============*/
 :root {
   --header-height: 3.5rem;
@@ -19,11 +19,11 @@
   --gradient-color: linear-gradient(180deg,
                       hsla(207, 48%, 72%, 0),
                       rgb(217, 217, 217));
-
+ 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
-  --body-font: 'Roboto', sans-serif;
-  --title-font: 'Lora', serif;
+  --body-font:  'Manrope', sans-serif;
+  --title-font:  'Manrope', sans-serif;
   --biggest-font-size: 1.5rem;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
@@ -308,7 +308,9 @@ body.dark-theme {
   letter-spacing: .3px;
   margin-bottom: .5rem;
 }
-
+.role {
+  color: blueviolet;
+}
 .home__blob {
   position: relative;
   width: 300px;
@@ -341,14 +343,14 @@ button.dwn_btn{
   align-items: center;
   width: 300px;
   padding: 1rem;
-  font-weight: var(--font-semi-bold);
   background-color: transparent;
   cursor: pointer;
   border: 1px solid grey;
   border-radius: 1rem;
 }
 .dwn_btn a{
-  color: aliceblue;
+  font-weight: var(--font-semi-bold);
+  color: grey;
   font-family:sans-serif ;
 }
 .home__shape-wawes,
@@ -635,7 +637,7 @@ button.dwn_btn{
   font-size: var(--small-font-size);
 }
 a.git__button{
-  color: aliceblue;
+  color: grey;
   padding: 10px;
   margin: 4px;
   width: 300px;

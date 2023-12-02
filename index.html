@@ -16,7 +16,8 @@
 
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="assets/css/styles.css">
-
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    
     <title>Hey I'm kowsick</title>
 </head>
 
@@ -86,10 +87,7 @@
             <div class="home__container container grid section__border">
                 <div class="home__data grid">
                     <h1 class="home__title">
-                        I'm Kowsick Ram M <br>
-                        Full Stack Developer<br>
-                        Data Analyst <br>
-                        and Graphic Designer.<br>
+                        I'm Kowsick Ram M <br><span class="role" id="element"></span>
                     </h1>
                     <div class="home__blob grid">
                         <div class="home__perfil">
@@ -178,11 +176,11 @@
             </div>
             <br>
             <center>
-            <button class="dwn_btn">
-                <a href="./assets/img/Kowsick Ram - M.pdf" download> Download CV</a>
-            </button>
+                <button class="dwn_btn">
+                    <a href="./assets/img/Kowsick Ram - M.pdf" download> Download CV</a>
+                </button>
             </center>
-        
+
         </section>
         <!--==================== SKILLS ====================-->
         <section class="skills section" id="skills">
@@ -379,10 +377,9 @@
                         Analyst
                     </h2>
                     <p class="services__description">
-                        From concept to creation, I provide
-                        top-notch digital animation services
-                        that deliver exceptional results.
-                        Let's bring your vision to life!
+                        From data analysis to insights, 
+                        I offer top-notch services that deliver exceptional results.
+                         Let's bring your data to life!
                     </p>
                     <div class="services__border"></div>
                 </div>
@@ -412,74 +409,80 @@
                     <div class="swiper-wrapper">
                         <!--==================== PROJECT 1 ====================-->
                         <div class="projects__content swiper-slide">
-                            <img src="./assets/img/To-Do.png" alt="projects image" class="projects__img">
+                            <center>
+                                <img src="./assets/img/To-Do.png" alt="projects image" class="projects__img">
 
-
-                            <div>
-                                <span class="projects__subtitle">React</span>
-                                <h1 class="projects__title">To-Do-App</h1>
-                                <a href="https://react-to-dozz.netlify.app/" target="_blank" class="projects__button">
-                                    View <i class="ri-arrow-right-line"></i>
-                                </a>
-                                <br>
-                                <br>
-
-                                <hr>
-                                <a href="https://github.com/kowsickram/React-To-Do" target="_blank" class="git__button">
-                                    Github
-                                </a>
-                            </div>
+                                <div>
+                                    <span class="projects__subtitle">React</span>
+                                    <h1 class="projects__title">To-Do-App</h1>
+                                    <a href="https://react-to-dozz.netlify.app/" target="_blank"
+                                        class="projects__button">
+                                        View <i class="ri-arrow-right-line"></i>
+                                    </a>
+                                    <br>
+                                    <br>
+                                    <hr>
+                                    <a href="https://github.com/kowsickram/React-To-Do" target="_blank"
+                                        class="git__button">
+                                        Github <i class="ri-github-line"></i>
+                                    </a>
+                                </div>
+                            </center>
                         </div>
                         <!--==================== PROJECT 2 ====================-->
                         <div class="projects__content swiper-slide">
                             <img src="#" alt="projects image" class="projects__img">
-
-
                             <div>
                                 <span class="projects__subtitle">Web</span>
                                 <h1 class="projects__title">Game</h1>
                                 <a href="#" class="projects__button">
                                     View <i class="ri-arrow-right-line"></i>
                                 </a>
+                                <br>
+                                    <br>
+                                    <hr>
                             </div>
                         </div>
                         <!--==================== PROJECT 3 ====================-->
                         <div class="projects__content swiper-slide">
                             <img src="#" alt="projects image" class="projects__img">
-
-
                             <div>
                                 <span class="projects__subtitle">Web</span>
                                 <h1 class="projects__title">Dating site</h1>
                                 <a href="#" class="projects__button">
                                     View <i class="ri-arrow-right-line"></i>
                                 </a>
+                                <br>
+                                    <br>
+                                    <hr>
                             </div>
                         </div>
                         <!--==================== PROJECT 4 ====================-->
                         <div class="projects__content swiper-slide">
                             <img src="#" alt="projects image" class="projects__img">
-
-
                             <div>
                                 <span class="projects__subtitle">Web</span>
                                 <h1 class="projects__title">Animation</h1>
                                 <a href="#" class="projects__button">
                                     View <i class="ri-arrow-right-line"></i>
                                 </a>
+                                <br>
+                                    <br>
+                                    <hr>
                             </div>
                         </div>
                         <!--==================== PROJECT 5 ====================-->
                         <div class="projects__content swiper-slide">
                             <img src="#" alt="projects image" class="projects__img">
-
-
                             <div>
                                 <span class="projects__subtitle">Web</span>
                                 <h1 class="projects__title">CRUD WebApp</h1>
                                 <a href="#" class="projects__button">
                                     View <i class="ri-arrow-right-line"></i>
                                 </a>
+                                <br>
+                                    <br>
+                                    <hr>
                             </div>
                         </div>
                         <!--==================== PROJECT 6 ====================-->
@@ -493,6 +496,9 @@
                                 <a href="#" class="projects__button">
                                     View <i class="ri-arrow-right-line"></i>
                                 </a>
+                                <br>
+                                    <br>
+                                    <hr>
                             </div>
                         </div>
                         <!--==================== PROJECT 7 ====================-->
@@ -506,6 +512,9 @@
                                 <a href="#" class="projects__button">
                                     View <i class="ri-arrow-right-line"></i>
                                 </a>
+                                <br>
+                                    <br>
+                                    <hr>
                             </div>
                         </div>
                     </div>

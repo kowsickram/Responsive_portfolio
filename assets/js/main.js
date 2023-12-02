@@ -1,3 +1,9 @@
+
+var typed = new Typed('#element', {
+  strings: ['<b>Graphic Designer</b>', '<b>Full Stack Developer</b>', '<b>Data Analyst</b>'],
+  typeSpeed: 100,
+  loop: true
+});
 /*=============== SHOW MENU ===============*/
 const navMenu = document.getElementById("nav-menu"),
   navToggle = document.getElementById("nav-toggle"),
@@ -42,90 +48,90 @@ let swiperProjects = new Swiper(".projects__container", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    1200: {
+      slidesPerView: 2,
+      spaceBetween: -56,
     },
-    breakpoints: {
-        1200: {
-            slidesPerView: 2,
-            spaceBetween: -56,
-        },
-    }
+  }
 });
 /*=============== SWIPER TESTIMONIAL ===============*/
 let swiperTestimonial = new Swiper(".testimonial__container", {
-    grabCursor: true,
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
+  grabCursor: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 });
 
 /*=============== EMAIL JS ===============*/
 const contactForm = document.getElementById('contact-form'),
-    contactName = document.getElementById('contact-name'),
-    contactEmail = document.getElementById('contact-email'),
-    contactProject = document.getElementById('contact-project'),
-    contactMessage = document.getElementById('contact-message')
+  contactName = document.getElementById('contact-name'),
+  contactEmail = document.getElementById('contact-email'),
+  contactProject = document.getElementById('contact-project'),
+  contactMessage = document.getElementById('contact-message')
 
 const sendEmail = (e) => {
-    e.preventDefault()
+  e.preventDefault()
 
-    //Check if the field has a value
-    if (contactName.value === '' || contactEmail.value === '' || contactProject.value === '') {
-        // Add and remove a color
-        contactMessage.classList.remove('color-blue')
-        contactMessage.classList.add("color-red")
+  //Check if the field has a value
+  if (contactName.value === '' || contactEmail.value === '' || contactProject.value === '') {
+    // Add and remove a color
+    contactMessage.classList.remove('color-blue')
+    contactMessage.classList.add("color-red")
 
-        //Show message
-        contactMessage.textContent = 'Write all the input fields 📩'
-    } else {
-        //serviceID - templateID - #form - publicKey
-        emailjs.sendForm(
-          "service_uyn2x0j",
-          "template_qqwsegt",
-          "#contact-form",
-          "YoLqFVV8zRyxYHwHS"
-          ).then(() => {
-            //Show message and add color
-            contactMessage.classList.add('color-blue')
-            contactMessage.textContent = 'Message sent successfully ✅'
+    //Show message
+    contactMessage.textContent = 'Write all the input fields 📩'
+  } else {
+    //serviceID - templateID - #form - publicKey
+    emailjs.sendForm(
+      "service_uyn2x0j",
+      "template_qqwsegt",
+      "#contact-form",
+      "YoLqFVV8zRyxYHwHS"
+    ).then(() => {
+      //Show message and add color
+      contactMessage.classList.add('color-blue')
+      contactMessage.textContent = 'Message sent successfully ✅'
 
-            // Remove message after five seconds
-            setTimeout(() => {
-                contactMessage.textContent = ''
-            }, 5000)
-        }, (error) => {
-            alert("OOPS! SOMETHING HAS FAILED...", error);
-        })
-        //To clear the input field
-        contactName.value = ''
-        contactEmail.value = '';
-        contactProject.value = '';
-    }
+      // Remove message after five seconds
+      setTimeout(() => {
+        contactMessage.textContent = ''
+      }, 5000)
+    }, (error) => {
+      alert("OOPS! SOMETHING HAS FAILED...", error);
+    })
+    //To clear the input field
+    contactName.value = ''
+    contactEmail.value = '';
+    contactProject.value = '';
+  }
 }
 contactForm.addEventListener('submit', sendEmail)
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 const sections = document.querySelectorAll('section[id]')
-    
-const scrollActive = () =>{
-  	const scrollY = window.pageYOffset
 
-	sections.forEach(current =>{
-		const sectionHeight = current.offsetHeight,
-			  sectionTop = current.offsetTop - 58,
-			  sectionId = current.getAttribute('id'),
-			  sectionsClass = document.querySelector('.nav__menu a[href*=' + sectionId + ']')
+const scrollActive = () => {
+  const scrollY = window.pageYOffset
 
-		if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
-			sectionsClass.classList.add('active-link')
-		}else{
-			sectionsClass.classList.remove('active-link')
-		}                                                    
-	})
+  sections.forEach(current => {
+    const sectionHeight = current.offsetHeight,
+      sectionTop = current.offsetTop - 58,
+      sectionId = current.getAttribute('id'),
+      sectionsClass = document.querySelector('.nav__menu a[href*=' + sectionId + ']')
+
+    if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+      sectionsClass.classList.add('active-link')
+    } else {
+      sectionsClass.classList.remove('active-link')
+    }
+  })
 }
 window.addEventListener('scroll', scrollActive)
 
-/*=============== SHOW SCROLL UP ===============*/ 
+/*=============== SHOW SCROLL UP ===============*/
 const scrollUp = () => {
   const scrollUp = document.getElementById("scroll-up");
   // When the scroll is higher than 350 viewport height, add the show-scroll class to the a tag with the scrollup class
@@ -136,7 +142,7 @@ const scrollUp = () => {
 window.addEventListener("scroll", scrollUp);
 
 
-/*=============== DARK LIGHT THEME ===============*/ 
+/*=============== DARK LIGHT THEME ===============*/
 const themeButton = document.getElementById("theme-button");
 const darkTheme = "dark-theme";
 const iconTheme = "ri-sun-line";
@@ -184,15 +190,15 @@ window.addEventListener("scroll", scrollHeader);
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
 const sr = ScrollReveal({
-    origin: 'top',
-    distance: '60px',
-    duration: 2500,
-    delay: 400,
-    // reset: true /* Animations repeat */
+  origin: 'top',
+  distance: '60px',
+  duration: 2500,
+  delay: 400,
+  // reset: true /* Animations repeat */
 })
 
 sr.reveal(`.home__data, .projects__container, .testimonial__container, .footer__container`)
-sr.reveal(`.home__info div`, {delay: 600, origin: 'bottom', interval: 100})
-sr.reveal(`.skills__content:nth-child(1), .contact__content:nth-child(1)`, {origin: "left" })
-sr.reveal(`.skills__content:nth-child(2), .contact__content:nth-child(2)`, {origin: "right"})
-sr.reveal(`.qualification__content, services__card`, {interval: 100 })
+sr.reveal(`.home__info div`, { delay: 600, origin: 'bottom', interval: 100 })
+sr.reveal(`.skills__content:nth-child(1), .contact__content:nth-child(1)`, { origin: "left" })
+sr.reveal(`.skills__content:nth-child(2), .contact__content:nth-child(2)`, { origin: "right" })
+sr.reveal(`.qualification__content, services__card`, { interval: 100 })
