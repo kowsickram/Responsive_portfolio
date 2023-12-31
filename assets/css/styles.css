@@ -17,8 +17,8 @@
   /* Change the first number */
   /* Blue: 207 - Purple: 250 - Pink: 356 - Teal: 174 */
   --gradient-color: linear-gradient(180deg,
-                      hsla(207, 48%, 72%, 0),
-                      rgb(217, 217, 217));
+                      hsla(298, 48%, 72%, 0),
+                      blueviolet);
  
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -350,8 +350,8 @@ button.dwn_btn{
 }
 .dwn_btn a{
   font-weight: var(--font-semi-bold);
-  color: grey;
-  font-family:sans-serif ;
+  color: blueviolet;
+  font-family:'Fira Sans', sans-serif;;
 }
 .home__shape-wawes,
 .home__shape-circle{
